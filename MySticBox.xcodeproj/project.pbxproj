@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C295800C21AD991700D77436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C295800B21AD991700D77436 /* AppDelegate.swift */; };
+		C295801321AD991800D77436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C295801221AD991800D77436 /* Assets.xcassets */; };
+		C295801621AD991800D77436 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295801421AD991800D77436 /* LaunchScreen.storyboard */; };
+		C295802121AD991900D77436 /* MySticBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C295802021AD991900D77436 /* MySticBoxTests.swift */; };
+		C295802C21AD991900D77436 /* MySticBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C295802B21AD991900D77436 /* MySticBoxUITests.swift */; };
+		C295804221AD9B3100D77436 /* MainTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804121AD9B3100D77436 /* MainTabViewController.storyboard */; };
+		C295804421AD9B5400D77436 /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804321AD9B5400D77436 /* Photos.storyboard */; };
+		C295804621AD9B7300D77436 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C295804521AD9B7300D77436 /* PhotosViewController.swift */; };
+		C295804821AD9BD500D77436 /* Files.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804721AD9BD500D77436 /* Files.storyboard */; };
+		C295804A21AD9BEE00D77436 /* Browsers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804921AD9BEE00D77436 /* Browsers.storyboard */; };
+		C295804C21AD9BFB00D77436 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804B21AD9BFB00D77436 /* More.storyboard */; };
+		C295804F21AD9C1B00D77436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804E21AD9C1B00D77436 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C295801D21AD991900D77436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C295800021AD991700D77436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C295800721AD991700D77436;
+			remoteInfo = MySticBox;
+		};
+		C295802821AD991900D77436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C295800021AD991700D77436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C295800721AD991700D77436;
+			remoteInfo = MySticBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C295800821AD991700D77436 /* MySticBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySticBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C295800B21AD991700D77436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C295801221AD991800D77436 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C295801521AD991800D77436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C295801721AD991800D77436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C295801C21AD991900D77436 /* MySticBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySticBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C295802021AD991900D77436 /* MySticBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySticBoxTests.swift; sourceTree = "<group>"; };
+		C295802221AD991900D77436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C295802721AD991900D77436 /* MySticBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySticBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C295802B21AD991900D77436 /* MySticBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySticBoxUITests.swift; sourceTree = "<group>"; };
+		C295802D21AD991900D77436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C295804121AD9B3100D77436 /* MainTabViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabViewController.storyboard; sourceTree = "<group>"; };
+		C295804321AD9B5400D77436 /* Photos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photos.storyboard; sourceTree = "<group>"; };
+		C295804521AD9B7300D77436 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		C295804721AD9BD500D77436 /* Files.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Files.storyboard; sourceTree = "<group>"; };
+		C295804921AD9BEE00D77436 /* Browsers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Browsers.storyboard; sourceTree = "<group>"; };
+		C295804B21AD9BFB00D77436 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		C295804E21AD9C1B00D77436 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C295800521AD991700D77436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C295801921AD991900D77436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C295802421AD991900D77436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2957FFF21AD991700D77436 = {
+			isa = PBXGroup;
+			children = (
+				C295800A21AD991700D77436 /* MySticBox */,
+				C295801F21AD991900D77436 /* MySticBoxTests */,
+				C295802A21AD991900D77436 /* MySticBoxUITests */,
+				C295800921AD991700D77436 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C295800921AD991700D77436 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C295800821AD991700D77436 /* MySticBox.app */,
+				C295801C21AD991900D77436 /* MySticBoxTests.xctest */,
+				C295802721AD991900D77436 /* MySticBoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C295800A21AD991700D77436 /* MySticBox */ = {
+			isa = PBXGroup;
+			children = (
+				C295804021AD9ABA00D77436 /* Main */,
+				C295803F21AD9AB100D77436 /* More */,
+				C295803E21AD9AA900D77436 /* Browsers */,
+				C295803D21AD9AA300D77436 /* Files */,
+				C295803C21AD9A9900D77436 /* Photos */,
+				C295803B21AD9A7300D77436 /* Base */,
+				C295803A21AD9A6600D77436 /* Model */,
+				C295803921AD9A0500D77436 /* Common */,
+				C295800B21AD991700D77436 /* AppDelegate.swift */,
+				C295801221AD991800D77436 /* Assets.xcassets */,
+				C295801421AD991800D77436 /* LaunchScreen.storyboard */,
+				C295801721AD991800D77436 /* Info.plist */,
+				C295804121AD9B3100D77436 /* MainTabViewController.storyboard */,
+			);
+			path = MySticBox;
+			sourceTree = "<group>";
+		};
+		C295801F21AD991900D77436 /* MySticBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				C295802021AD991900D77436 /* MySticBoxTests.swift */,
+				C295802221AD991900D77436 /* Info.plist */,
+			);
+			path = MySticBoxTests;
+			sourceTree = "<group>";
+		};
+		C295802A21AD991900D77436 /* MySticBoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C295802B21AD991900D77436 /* MySticBoxUITests.swift */,
+				C295802D21AD991900D77436 /* Info.plist */,
+			);
+			path = MySticBoxUITests;
+			sourceTree = "<group>";
+		};
+		C295803921AD9A0500D77436 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C295803A21AD9A6600D77436 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C295803B21AD9A7300D77436 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C295803C21AD9A9900D77436 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				C295804321AD9B5400D77436 /* Photos.storyboard */,
+				C295804521AD9B7300D77436 /* PhotosViewController.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		C295803D21AD9AA300D77436 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C295804721AD9BD500D77436 /* Files.storyboard */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		C295803E21AD9AA900D77436 /* Browsers */ = {
+			isa = PBXGroup;
+			children = (
+				C295804921AD9BEE00D77436 /* Browsers.storyboard */,
+			);
+			path = Browsers;
+			sourceTree = "<group>";
+		};
+		C295803F21AD9AB100D77436 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				C295804B21AD9BFB00D77436 /* More.storyboard */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		C295804021AD9ABA00D77436 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C295804E21AD9C1B00D77436 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C295800721AD991700D77436 /* MySticBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C295803021AD991900D77436 /* Build configuration list for PBXNativeTarget "MySticBox" */;
+			buildPhases = (
+				C295800421AD991700D77436 /* Sources */,
+				C295800521AD991700D77436 /* Frameworks */,
+				C295800621AD991700D77436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySticBox;
+			productName = MySticBox;
+			productReference = C295800821AD991700D77436 /* MySticBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C295801B21AD991900D77436 /* MySticBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C295803321AD991900D77436 /* Build configuration list for PBXNativeTarget "MySticBoxTests" */;
+			buildPhases = (
+				C295801821AD991900D77436 /* Sources */,
+				C295801921AD991900D77436 /* Frameworks */,
+				C295801A21AD991900D77436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C295801E21AD991900D77436 /* PBXTargetDependency */,
+			);
+			name = MySticBoxTests;
+			productName = MySticBoxTests;
+			productReference = C295801C21AD991900D77436 /* MySticBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C295802621AD991900D77436 /* MySticBoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C295803621AD991900D77436 /* Build configuration list for PBXNativeTarget "MySticBoxUITests" */;
+			buildPhases = (
+				C295802321AD991900D77436 /* Sources */,
+				C295802421AD991900D77436 /* Frameworks */,
+				C295802521AD991900D77436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C295802921AD991900D77436 /* PBXTargetDependency */,
+			);
+			name = MySticBoxUITests;
+			productName = MySticBoxUITests;
+			productReference = C295802721AD991900D77436 /* MySticBoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C295800021AD991700D77436 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Oanh Tran";
+				TargetAttributes = {
+					C295800721AD991700D77436 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					C295801B21AD991900D77436 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = C295800721AD991700D77436;
+					};
+					C295802621AD991900D77436 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = C295800721AD991700D77436;
+					};
+				};
+			};
+			buildConfigurationList = C295800321AD991700D77436 /* Build configuration list for PBXProject "MySticBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2957FFF21AD991700D77436;
+			productRefGroup = C295800921AD991700D77436 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C295800721AD991700D77436 /* MySticBox */,
+				C295801B21AD991900D77436 /* MySticBoxTests */,
+				C295802621AD991900D77436 /* MySticBoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C295800621AD991700D77436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C295801621AD991800D77436 /* LaunchScreen.storyboard in Resources */,
+				C295804421AD9B5400D77436 /* Photos.storyboard in Resources */,
+				C295804C21AD9BFB00D77436 /* More.storyboard in Resources */,
+				C295804F21AD9C1B00D77436 /* Main.storyboard in Resources */,
+				C295804821AD9BD500D77436 /* Files.storyboard in Resources */,
+				C295804A21AD9BEE00D77436 /* Browsers.storyboard in Resources */,
+				C295804221AD9B3100D77436 /* MainTabViewController.storyboard in Resources */,
+				C295801321AD991800D77436 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C295801A21AD991900D77436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C295802521AD991900D77436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C295800421AD991700D77436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C295800C21AD991700D77436 /* AppDelegate.swift in Sources */,
+				C295804621AD9B7300D77436 /* PhotosViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C295801821AD991900D77436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C295802121AD991900D77436 /* MySticBoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C295802321AD991900D77436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C295802C21AD991900D77436 /* MySticBoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C295801E21AD991900D77436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C295800721AD991700D77436 /* MySticBox */;
+			targetProxy = C295801D21AD991900D77436 /* PBXContainerItemProxy */;
+		};
+		C295802921AD991900D77436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C295800721AD991700D77436 /* MySticBox */;
+			targetProxy = C295802821AD991900D77436 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C295801421AD991800D77436 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C295801521AD991800D77436 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C295802E21AD991900D77436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C295802F21AD991900D77436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C295803121AD991900D77436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E5UT2C56T;
+				INFOPLIST_FILE = MySticBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "VD9TDEJU5N.-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C295803221AD991900D77436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E5UT2C56T;
+				INFOPLIST_FILE = MySticBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "VD9TDEJU5N.-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C295803421AD991900D77436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E5UT2C56T;
+				INFOPLIST_FILE = MySticBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MySticBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySticBox.app/MySticBox";
+			};
+			name = Debug;
+		};
+		C295803521AD991900D77436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E5UT2C56T;
+				INFOPLIST_FILE = MySticBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MySticBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySticBox.app/MySticBox";
+			};
+			name = Release;
+		};
+		C295803721AD991900D77436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E5UT2C56T;
+				INFOPLIST_FILE = MySticBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MySticBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySticBox;
+			};
+			name = Debug;
+		};
+		C295803821AD991900D77436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E5UT2C56T;
+				INFOPLIST_FILE = MySticBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MySticBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySticBox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C295800321AD991700D77436 /* Build configuration list for PBXProject "MySticBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C295802E21AD991900D77436 /* Debug */,
+				C295802F21AD991900D77436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C295803021AD991900D77436 /* Build configuration list for PBXNativeTarget "MySticBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C295803121AD991900D77436 /* Debug */,
+				C295803221AD991900D77436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C295803321AD991900D77436 /* Build configuration list for PBXNativeTarget "MySticBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C295803421AD991900D77436 /* Debug */,
+				C295803521AD991900D77436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C295803621AD991900D77436 /* Build configuration list for PBXNativeTarget "MySticBoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C295803721AD991900D77436 /* Debug */,
+				C295803821AD991900D77436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C295800021AD991700D77436 /* Project object */;
+}
