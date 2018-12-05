@@ -9,38 +9,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Photos-->
         <scene sceneID="gLG-yS-47f">
             <objects>
-                <viewController id="KUD-wj-sNQ" customClass="PhotosViewController" customModule="MySticBox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Photos" extendedLayoutIncludesOpaqueBars="YES" id="KUD-wj-sNQ" customClass="PhotosViewController" customModule="MySticBox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vai-ZV-aNx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ds4-O0-298"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="RDQ-aY-1Y3"/>
+                    <navigationItem key="navigationItem" id="UUB-4N-Qmi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="An0-Qk-cGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="19"/>
+            <point key="canvasLocation" x="1604" y="18.440779610194905"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Zkl-Dk-JFk">
+        <!--Navigation Controller-->
+        <scene sceneID="6UP-wh-vHW">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cvk-Lx-zmW" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w5u-WW-qdb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Photos" id="RDQ-aY-1Y3"/>
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mM1-l4-ZMM">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qcZ-wp-v6T">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="KUD-wj-sNQ" kind="relationship" relationship="viewControllers" id="Ovc-UB-Phs"/>
+                        <segue destination="KUD-wj-sNQ" kind="relationship" relationship="rootViewController" id="oq9-5W-YY5"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cUy-7r-vFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBa-ZF-chC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8.8000000000000007" y="19.340329835082461"/>
+            <point key="canvasLocation" x="664.79999999999995" y="18.440779610194905"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Photos" width="27" height="24"/>
+    </resources>
 </document>

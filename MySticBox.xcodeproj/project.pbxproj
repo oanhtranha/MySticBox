@@ -19,6 +19,12 @@
 		C295804A21AD9BEE00D77436 /* Browsers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804921AD9BEE00D77436 /* Browsers.storyboard */; };
 		C295804C21AD9BFB00D77436 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804B21AD9BFB00D77436 /* More.storyboard */; };
 		C295804F21AD9C1B00D77436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C295804E21AD9C1B00D77436 /* Main.storyboard */; };
+		C2FF86CC21B132EC00F80F7E /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF86CB21B132EC00F80F7E /* FilesViewController.swift */; };
+		C2FF86CE21B132FB00F80F7E /* BrowsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF86CD21B132FB00F80F7E /* BrowsersViewController.swift */; };
+		C2FF86D021B1334200F80F7E /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF86CF21B1334200F80F7E /* MoreViewController.swift */; };
+		C2FF86D221B1335000F80F7E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF86D121B1335000F80F7E /* MainViewController.swift */; };
+		C2FF86D421B1365D00F80F7E /* PresentingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF86D321B1365D00F80F7E /* PresentingTabBarController.swift */; };
+		C2FF86D621B1371B00F80F7E /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF86D521B1371B00F80F7E /* MainTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,18 @@
 			remoteInfo = MySticBox;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2FF872421B14B9A00F80F7E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C295800821AD991700D77436 /* MySticBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySticBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +75,12 @@
 		C295804921AD9BEE00D77436 /* Browsers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Browsers.storyboard; sourceTree = "<group>"; };
 		C295804B21AD9BFB00D77436 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		C295804E21AD9C1B00D77436 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C2FF86CB21B132EC00F80F7E /* FilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		C2FF86CD21B132FB00F80F7E /* BrowsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsersViewController.swift; sourceTree = "<group>"; };
+		C2FF86CF21B1334200F80F7E /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		C2FF86D121B1335000F80F7E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C2FF86D321B1365D00F80F7E /* PresentingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingTabBarController.swift; sourceTree = "<group>"; };
+		C2FF86D521B1371B00F80F7E /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +115,7 @@
 				C295801F21AD991900D77436 /* MySticBoxTests */,
 				C295802A21AD991900D77436 /* MySticBoxUITests */,
 				C295800921AD991700D77436 /* Products */,
+				C2FF86D721B1435400F80F7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +145,7 @@
 				C295801421AD991800D77436 /* LaunchScreen.storyboard */,
 				C295801721AD991800D77436 /* Info.plist */,
 				C295804121AD9B3100D77436 /* MainTabViewController.storyboard */,
+				C2FF86D521B1371B00F80F7E /* MainTabViewController.swift */,
 			);
 			path = MySticBox;
 			sourceTree = "<group>";
@@ -159,6 +185,7 @@
 		C295803B21AD9A7300D77436 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C2FF86D321B1365D00F80F7E /* PresentingTabBarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -176,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				C295804721AD9BD500D77436 /* Files.storyboard */,
+				C2FF86CB21B132EC00F80F7E /* FilesViewController.swift */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -184,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				C295804921AD9BEE00D77436 /* Browsers.storyboard */,
+				C2FF86CD21B132FB00F80F7E /* BrowsersViewController.swift */,
 			);
 			path = Browsers;
 			sourceTree = "<group>";
@@ -192,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				C295804B21AD9BFB00D77436 /* More.storyboard */,
+				C2FF86CF21B1334200F80F7E /* MoreViewController.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -200,8 +230,16 @@
 			isa = PBXGroup;
 			children = (
 				C295804E21AD9C1B00D77436 /* Main.storyboard */,
+				C2FF86D121B1335000F80F7E /* MainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		C2FF86D721B1435400F80F7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +252,8 @@
 				C295800421AD991700D77436 /* Sources */,
 				C295800521AD991700D77436 /* Frameworks */,
 				C295800621AD991700D77436 /* Resources */,
+				C2FF86F221B147C400F80F7E /* ShellScript */,
+				C2FF872421B14B9A00F80F7E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -335,12 +375,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2FF86F221B147C400F80F7E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Sync.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C295800421AD991700D77436 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FF86D021B1334200F80F7E /* MoreViewController.swift in Sources */,
+				C2FF86D621B1371B00F80F7E /* MainTabViewController.swift in Sources */,
 				C295800C21AD991700D77436 /* AppDelegate.swift in Sources */,
+				C2FF86CE21B132FB00F80F7E /* BrowsersViewController.swift in Sources */,
+				C2FF86D421B1365D00F80F7E /* PresentingTabBarController.swift in Sources */,
+				C2FF86D221B1335000F80F7E /* MainViewController.swift in Sources */,
+				C2FF86CC21B132EC00F80F7E /* FilesViewController.swift in Sources */,
 				C295804621AD9B7300D77436 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +588,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2E5UT2C56T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MySticBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,6 +610,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2E5UT2C56T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MySticBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
