@@ -70,26 +70,6 @@ class PresentingTabBarController: UITabBarController {
         viewControllers?[index].tabBarItem.title = title
     }
     
-//    func setCustomTabButton(_ button: UIButton, forTabAtIndex index: Int) {
-//        guard let itemsCount = tabBar.items?.count else { return }
-//
-//        let tabBarItemWidth = tabBar.frame.width / CGFloat(itemsCount)
-//
-//        let customViewFrameHeight = button.frame.height + 7
-//        let customViewFrame = CGRect(x: tabBarItemWidth * CGFloat(index) + (tabBarItemWidth - button.frame.width) / 2, y: tabBar.frame.height - customViewFrameHeight, width: button.frame.width, height: customViewFrameHeight)
-//        let customView = UIView(frame: customViewFrame)
-//
-//        let buttonFrameOrigin = CGPoint(x: (customViewFrame.width - button.frame.width) / 2.0, y: 0)
-//        button.frame = CGRect(origin: buttonFrameOrigin, size: button.frame.size)
-//        button.tag = index
-//        button.addTarget(self, action: #selector(customButtonClicked), for: .touchUpInside)
-//
-//        customView.addSubview(button)
-//        tabBar.addSubview(customView)
-//        (tabBar as? MainTabBar)?.middleButton = button
-//        customButtonsForIndexes[index] = button
-//    }
-    
     func shouldSelectTab(atIndex: Int) -> Bool {
         return true
     }
@@ -115,13 +95,6 @@ class PresentingTabBarController: UITabBarController {
             present(storedTabs[index], animated: true) {}
         }
     }
-    
-//    func presentPayViewController() {
-//        if checkIndexSelected(atIndex: payButtonIndex) {
-//            presentViewController(atIndex: payButtonIndex)
-//        }
-//    }
-    
 }
 
 extension PresentingTabBarController: UITabBarControllerDelegate {
