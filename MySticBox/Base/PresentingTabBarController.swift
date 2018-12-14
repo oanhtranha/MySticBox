@@ -12,17 +12,14 @@ protocol PresentingTab: class {}
 
 class PresentingTabBarController: UITabBarController {
     
-    fileprivate var customButtonsForIndexes: [Int : UIButton] = [:]
     fileprivate var storedTabs: [UIViewController] = []
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        self.delegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.delegate = self
         
         // Need to call custom setter
         if let viewControllers = self.viewControllers {
@@ -56,8 +53,15 @@ class PresentingTabBarController: UITabBarController {
         }
     }
     
+    func setTabbarItemTitleAttributes() {
+        let font = UIFont.msb_PTMonoRegular(ofSize: 12)
+        viewControllers?.forEach {
+            $0.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
+            $0.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.blue], for: .selected)
+        }
+    }
+    
     func setItemEnabled(_ enabled: Bool, atIndex index: Int) {
-        customButtonsForIndexes[index]?.isEnabled = enabled
         viewControllers?[index].tabBarItem.isEnabled = enabled
     }
     
@@ -68,48 +72,5 @@ class PresentingTabBarController: UITabBarController {
     
     func setTitle(_ title: String, atIndex index: Int) {
         viewControllers?[index].tabBarItem.title = title
-    }
-    
-    func shouldSelectTab(atIndex: Int) -> Bool {
-        return true
-    }
-    
-    @objc private func customButtonClicked(sender: UIButton) {
-        let index = sender.tag
-        if checkIndexSelected(atIndex: index) {
-            presentViewController(atIndex: index)
-        } else if shouldSelectTab(atIndex: index) {
-            selectedIndex = index
-        }
-    }
-    
-    private func checkIndexSelected(atIndex index : Int) -> Bool {
-        if index < storedTabs.count, storedTabs[index] is PresentingTab {
-            return true
-        }
-        return false
-    }
-    
-    private func presentViewController(atIndex index : Int) {
-        if shouldSelectTab(atIndex: index) {
-            present(storedTabs[index], animated: true) {}
-        }
-    }
-}
-
-extension PresentingTabBarController: UITabBarControllerDelegate {
-    
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        
-        guard let index = viewControllers?.index(of: viewController) else {
-            return false
-        }
-        
-        if checkIndexSelected(atIndex: index) {
-            presentViewController(atIndex: index)
-            return false
-        }
-        
-        return shouldSelectTab(atIndex: index)
     }
 }

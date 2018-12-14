@@ -13,10 +13,10 @@
         <scene sceneID="mgz-ex-GeD">
             <objects>
                 <tabBarController id="h3I-SD-p7o" customClass="MainTabViewController" customModule="MySticBox" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SPS-TI-ZBL">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="SPS-TI-ZBL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.37647058823529411" green="0.52941176470588236" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="VTx-p0-eZa" kind="relationship" relationship="viewControllers" id="ykm-Nm-V9o"/>

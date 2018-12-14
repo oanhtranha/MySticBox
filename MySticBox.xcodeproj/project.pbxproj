@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23000DD21C394A200CDE606 /* pt-mono.bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23000DB21C394A100CDE606 /* pt-mono.bold.ttf */; };
+		C23000DE21C394A200CDE606 /* pt-mono.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23000DC21C394A200CDE606 /* pt-mono.regular.ttf */; };
+		C23000E021C39ABD00CDE606 /* UIView+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23000DF21C39ABD00CDE606 /* UIView+Layer.swift */; };
+		C23000E221C3A16500CDE606 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23000E121C3A16500CDE606 /* UIFont+Extensions.swift */; };
+		C23000E421C3A18000CDE606 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23000E321C3A18000CDE606 /* UIColor+Extensions.swift */; };
 		C280857621B7D0280060EA86 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C280856A21B7D0280060EA86 /* AlamofireImage.framework */; };
 		C280857721B7D0280060EA86 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C280856B21B7D0280060EA86 /* CocoaLumberjackSwift.framework */; };
 		C280857821B7D0280060EA86 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C280856C21B7D0280060EA86 /* RxCocoa.framework */; };
@@ -92,6 +97,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C23000DB21C394A100CDE606 /* pt-mono.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pt-mono.bold.ttf"; sourceTree = "<group>"; };
+		C23000DC21C394A200CDE606 /* pt-mono.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pt-mono.regular.ttf"; sourceTree = "<group>"; };
+		C23000DF21C39ABD00CDE606 /* UIView+Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layer.swift"; sourceTree = "<group>"; };
+		C23000E121C3A16500CDE606 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		C23000E321C3A18000CDE606 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		C280856A21B7D0280060EA86 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		C280856B21B7D0280060EA86 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 		C280856C21B7D0280060EA86 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -178,6 +188,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C23000D821C3934700CDE606 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C23000DB21C394A100CDE606 /* pt-mono.bold.ttf */,
+				C23000DC21C394A200CDE606 /* pt-mono.regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C28085B521B7D6B50060EA86 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				C28085B721B7D6D60060EA86 /* UIViewController+RoootViewController.swift */,
+				C23000DF21C39ABD00CDE606 /* UIView+Layer.swift */,
+				C23000E121C3A16500CDE606 /* UIFont+Extensions.swift */,
+				C23000E321C3A18000CDE606 /* UIColor+Extensions.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -218,6 +240,7 @@
 		C295800A21AD991700D77436 /* MySticBox */ = {
 			isa = PBXGroup;
 			children = (
+				C23000D821C3934700CDE606 /* Fonts */,
 				C28085B521B7D6B50060EA86 /* Utilities */,
 				C295804021AD9ABA00D77436 /* Main */,
 				C295803F21AD9AB100D77436 /* More */,
@@ -232,6 +255,7 @@
 				C295801421AD991800D77436 /* LaunchScreen.storyboard */,
 				C295801721AD991800D77436 /* Info.plist */,
 				C295804121AD9B3100D77436 /* MainTabViewController.storyboard */,
+				C28085B321B7D5490060EA86 /* MainTabViewModel.swift */,
 				C2FF86D521B1371B00F80F7E /* MainTabViewController.swift */,
 			);
 			path = MySticBox;
@@ -273,7 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				C2FF86D321B1365D00F80F7E /* PresentingTabBarController.swift */,
-				C28085B321B7D5490060EA86 /* MainTabViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -460,6 +483,8 @@
 			files = (
 				C295801621AD991800D77436 /* LaunchScreen.storyboard in Resources */,
 				C295804421AD9B5400D77436 /* Photos.storyboard in Resources */,
+				C23000DD21C394A200CDE606 /* pt-mono.bold.ttf in Resources */,
+				C23000DE21C394A200CDE606 /* pt-mono.regular.ttf in Resources */,
 				C295804C21AD9BFB00D77436 /* More.storyboard in Resources */,
 				C295804F21AD9C1B00D77436 /* Main.storyboard in Resources */,
 				C295804821AD9BD500D77436 /* Files.storyboard in Resources */,
@@ -524,12 +549,15 @@
 				C2FF86D021B1334200F80F7E /* MoreViewController.swift in Sources */,
 				C2FF86D621B1371B00F80F7E /* MainTabViewController.swift in Sources */,
 				C295800C21AD991700D77436 /* AppDelegate.swift in Sources */,
+				C23000E021C39ABD00CDE606 /* UIView+Layer.swift in Sources */,
 				C2FF86CE21B132FB00F80F7E /* BrowsersViewController.swift in Sources */,
 				C2FF86D421B1365D00F80F7E /* PresentingTabBarController.swift in Sources */,
 				C2FF86D221B1335000F80F7E /* MainViewController.swift in Sources */,
 				C2FF86CC21B132EC00F80F7E /* FilesViewController.swift in Sources */,
 				C28085B821B7D6D60060EA86 /* UIViewController+RoootViewController.swift in Sources */,
 				C295804621AD9B7300D77436 /* PhotosViewController.swift in Sources */,
+				C23000E421C3A18000CDE606 /* UIColor+Extensions.swift in Sources */,
+				C23000E221C3A16500CDE606 /* UIFont+Extensions.swift in Sources */,
 				C28085B421B7D5490060EA86 /* MainTabViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

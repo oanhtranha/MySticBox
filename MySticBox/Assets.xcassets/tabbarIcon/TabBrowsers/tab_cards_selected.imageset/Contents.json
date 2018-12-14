@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "gallery.png",
+      "filename" : "217TabbarActiveAccount.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "gallery@2x.png",
+      "filename" : "217TabbarActiveAccount@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "gallery@3x.png",
+      "filename" : "217TabbarActiveAccount@3x.png",
       "scale" : "3x"
     }
   ],

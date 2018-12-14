@@ -13,29 +13,50 @@ import RxSwift
 class MainTabViewController: PresentingTabBarController {
     private let disposeBag = DisposeBag()
     private var viewModel = MainTabViewModel()
-    private let tabbarTitles = ["HOME","ANALYTICS","PAYMENTS","ACCOUNT","SETTINGS"]
+    private let tabbarTitles = ["Photos","Files","Add","Browsers","More"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        enableTabs([true, true, true, true, true])
-        
         viewModel.setup()
-        if let photoImage = UIImage(named: "photos_icon"), let filesImage = UIImage(named: "files_icon"), let browsersImage = UIImage(named: "browsers_icon"), let moreImage = UIImage(named: "more_icon") {
-            setImage(photoImage, selectedImage:photoImage.withRenderingMode(.alwaysOriginal), atIndex: 0)
-            setImage(filesImage, selectedImage:filesImage.withRenderingMode(.alwaysOriginal), atIndex: 1)
-            setImage(moreImage, selectedImage:moreImage.withRenderingMode(.alwaysOriginal), atIndex: 2)
-            setImage(browsersImage, selectedImage:browsersImage.withRenderingMode(.alwaysOriginal), atIndex: 3)
-            setImage(moreImage, selectedImage:moreImage.withRenderingMode(.alwaysOriginal), atIndex: 4)
-        }
+        configTabbar()
         
-        tabBar.backgroundColor = UIColor.blue
+        viewModel.enableTabs.drive(onNext: { [weak self] value in
+            self?.enableTabs(value)
+        }).disposed(by: disposeBag)
         
+    }
+    
+    private func configTabbar() {
+        setImage(#imageLiteral(resourceName: "tab_home_selected").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tab_payments_selected").withRenderingMode(.alwaysOriginal), atIndex: 0)
+        setImage(#imageLiteral(resourceName: "tab_expenses").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tab_expenses_selected").withRenderingMode(.alwaysOriginal), atIndex: 1)
+        setImage(#imageLiteral(resourceName: "tab_cards").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tab_cards_selected").withRenderingMode(.alwaysOriginal), atIndex: 3)
+        setImage(#imageLiteral(resourceName: "tab_setting").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tab_setting_selected").withRenderingMode(.alwaysOriginal), atIndex: 4)
+        tabbarTitles.enumerated().forEach({(index, title) in setTitle(title, atIndex: index)})
+        tabBar.backgroundImage =  UIImage()
+        tabBar.shadowImage = UIImage()
+        tabBar.isTranslucent = true
+        tabBar.backgroundColor = UIColor.init(hex: 0x6087FA)
+        
+        setTabbarItemTitleAttributes()
     }
     
     private func enableTabs(_ enable: [Bool]) {
         for (i, enableTab) in enable.enumerated() {
             setItemEnabled(enableTab, atIndex: i)
         }
+    }
+    
+    private func payTabButton() -> UIButton {
+        let button = UIButton(type: .custom)
+        
+        button.shadowOffset = CGSize(width: 0, height: 20)
+        button.shadowColor = UIColor(white: 0, alpha: 0.2)
+        button.shadowRadius = 10.0
+        button.shadowOpacity = 1.0
+        
+        button.frame = CGRect(x: 0, y: 0, width: 60.0, height: 60.0)
+        button.setBackgroundImage(#imageLiteral(resourceName: "payButtonCopy"), for: .normal)
+        
+        return button
     }
 }
